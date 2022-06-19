@@ -11,6 +11,11 @@ namespace SEDC.PizzaApp.Controllers
             return View();
         }
 
+        public IActionResult Empty()
+        {
+            return new EmptyResult();
+        }
+
         public IActionResult GetOrders()
         {
             List<Orders> dbOrders = (List<Orders>)OrdersDb.Orders;
