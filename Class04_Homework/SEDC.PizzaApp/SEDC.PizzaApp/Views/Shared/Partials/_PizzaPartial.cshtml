@@ -1,0 +1,7 @@
+﻿@model PizzaViewModel
+
+<div style="border: solid 1px black">
+    <p>Pizza Name: @Model.Name</p>
+    <p>Pizza Price: @Model.Price</p>
+    <p>IsOnPromotion: @(Model.IsOnPromotion == true ? "Yes, the pizza is on promotion" : "No, its not on promotion.")</p>
+</div>
